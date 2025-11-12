@@ -11,12 +11,12 @@ environments:
 
 pipeline:
   stages:
-    main-notebook:
+    analyze-penguins:
       kind: jupyter-notebook
-      notebook_path: notebooks/main.ipynb
+      notebook_path: notebooks/penguins.ipynb
       environment: main
       inputs:
-        - data/raw
+        - data/raw/penguins.csv
       outputs:
         - path: figures
           storage: git
@@ -24,8 +24,15 @@ pipeline:
           storage: git
 
 notebooks:
-  - path: notebooks/main.ipynb
-    title: Main notebook
+  - path: notebooks/penguins.ipynb
+    title: Penguins analysis
+    description: >
+      A modified version of Saswat Seth's penguins analysis notebook.
+    imported_from:
+      url: https://www.kaggle.com/code/saswatsethda/penguins-data-analysis-and-modeling
+    license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0
 
 datasets:
   - path: data/raw/penguins.csv
