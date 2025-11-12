@@ -3,3 +3,8 @@ name: example-analytics
 title: Analytics example
 description: An example project that does some analytics (data science).
 git_repo_url: https://github.com/calkit/example-analytics
+
+environments:
+  main:
+    kind: uv
+    path: pyproject.toml
