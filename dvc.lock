@@ -30,8 +30,8 @@ stages:
     deps:
     - path: .calkit/notebooks/cleaned/notebooks/main.ipynb
       hash: md5
-      md5: 700fc28e0d8bcc1c87857a8a28b4c9c7
-      size: 686644
+      md5: 6ac1c2a0dd045a792943472a2e1f0b42
+      size: 653983
     - path: data/raw/penguins.csv
       hash: md5
       md5: 15d47d23d10f2f2f842439a2abdb771d
@@ -41,18 +41,14 @@ stages:
       md5: 2279fd3dc518c2c475923e43d7c58340
       size: 352777
     outs:
-    - path: .calkit/notebooks/executed/notebooks/main.ipynb
-      hash: md5
-      md5: c06bd31fdfb6667e8ad312e20df263e7
-      size: 1872994
     - path: .calkit/notebooks/html/notebooks/main.html
       hash: md5
-      md5: 342f47284420fe13489d016f8a331daa
-      size: 2176664
+      md5: bb978d5504b9a0470f55a3071ed105e0
+      size: 2176060
     - path: figures
       hash: md5
-      md5: cf0c4852dcbe91edb737d74e80264446.dir
-      size: 974891
+      md5: b7e7ee4df7b200ac02378b506ad9d58f.dir
+      size: 975545
       nfiles: 3
     - path: results/vif.json
       hash: md5
@@ -60,6 +56,6 @@ stages:
       size: 159
     - path: tables
       hash: md5
-      md5: d4216634870d086a0c3a9eb049cd7f86.dir
+      md5: 00b859255f9b983b178282770c2c48a3.dir
       size: 964
       nfiles: 1
