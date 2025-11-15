@@ -22,6 +22,8 @@ pipeline:
           storage: git
         - path: tables
           storage: git
+        - path: results/main.json
+          storage: git
 
 notebooks:
   - path: notebooks/main.ipynb
