@@ -58,8 +58,7 @@ figures:
 datasets:
   - path: data/raw/penguins.csv
     title: Palmer's penguins
-    imported_from:
-      doi: 10.5281/zenodo.3960218
+    imported_from: https://doi.org/10.5281/zenodo.3960218
     license: CC0-1.0
     notes: Exported from Seaborn.
 
