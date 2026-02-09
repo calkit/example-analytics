@@ -25,13 +25,12 @@ stages:
       md5: 700fc28e0d8bcc1c87857a8a28b4c9c7
       size: 686644
   run-main-notebook:
-    cmd: calkit nb execute --environment main --no-check --language python --to 
-      html "notebooks/main.ipynb"
+    cmd: calkit nb execute --environment main --no-check --to html "notebooks/main.ipynb"
     deps:
     - path: .calkit/notebooks/cleaned/notebooks/main.ipynb
       hash: md5
-      md5: 59d8b49ab2f11231248f1445ff77570e
-      size: 84911
+      md5: ecb6137fc85ec1fc1cfcbe7563df154a
+      size: 84845
     - path: data/raw/penguins.csv
       hash: md5
       md5: 15d47d23d10f2f2f842439a2abdb771d
@@ -43,12 +42,12 @@ stages:
     outs:
     - path: .calkit/notebooks/html/notebooks/main.html
       hash: md5
-      md5: 4fb1345ab203f4cfbb677ec4f22d47a7
-      size: 1372945
+      md5: 658d46bfac6bdfdd5f704b7995d96fc7
+      size: 1372483
     - path: figures
       hash: md5
-      md5: 265ab64fd9a283181e60d0761346a96b.dir
-      size: 975540
+      md5: 515ccb99c9d97e353545e207ca4592ca.dir
+      size: 974757
       nfiles: 3
     - path: results/vif.json
       hash: md5
@@ -56,6 +55,6 @@ stages:
       size: 156
     - path: tables
       hash: md5
-      md5: ad04bc7fc671475d5f0b75962d1a8634.dir
+      md5: d75fa3ced934128664a6b00b00452781.dir
       size: 964
       nfiles: 1
